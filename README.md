@@ -1,23 +1,22 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-# A Q-learning based charging strategy with Kmeans network clustering on Wireless Rechargeable Sensor Network
+# A Fuzzy Logic based charging strategy on Wireless Rechargeable Sensor Network
 
 
 ## About the Project 
- This Project is an implementation of a Q_learning based charging strategy with Kmeans network-clustering running on a WRSN Simulator with multiple mobile chargers.
+ This Project is an implementation of a Fuzzy Logic based charging strategy running on a WRSN Simulator with multiple mobile chargers.
 
 ## Prerequisites:
 
 - `pandas>=1.1.3`  
 - `scipy>=1.5.2`    
 - `numpy>=1.19.2`
-- `scikit_learn>=0.24.2`
 
 ## Installation:
 1. Clone the repo:
 ```bash
-$ git clone https://github.com/Qcharging-Papers/Qcharging_Kmeans1.git
+$ git clone https://github.com/Qcharging-Papers/Fuzzy.git
 ```
 2. Install Prerequisites:
 ```bash
@@ -32,7 +31,6 @@ $ pip install -r requirements.txt
 data
 ├── MC.csv
 ├── cluster.csv
-├── hole.csv
 ├── node.csv
 ├── package.csv
 ├── prob.csv
@@ -43,7 +41,7 @@ data
 2. Run:
 
 ```bash
-python3 simulate.py
+python3 Simulate.py
 ```
 - You can choose to `RESUME` unfinished experiments or to `START` new experiments
 - Experiment type and index must be input
