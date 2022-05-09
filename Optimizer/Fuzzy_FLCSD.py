@@ -73,11 +73,10 @@ def out_crisp(fuzzy_set):
 
 def estimate(re, E_max, d, d_max, cn, cn_max, ecr, ecr_max):
     # print(re, E_max, d, d_max, cn, cn_max, ecr, ecr_max)
-    out_rule = ['M', 'M', 'VH', 'M', 'H', 'VH', 'H', 'VH', 'VH', 'L', 'L', 'M', 'L', 'M', 'H', 'M', 'H', 'VH', 'L', 'L',
-                'M', 'L', 'L', 'H', 'L', 'M', 'H', 'L', 'M', 'H', 'M', 'H', 'H', 'M', 'H', 'VH', 'L', 'L', 'H', 'M',
-                'M', 'H', 'M', 'M', 'H', 'L', 'L', 'M', 'M', 'M', 'H', 'M', 'M', 'H', 'VL', 'VL', 'L', 'VL', 'L', 'M',
-                'L', 'M', 'H', 'VL', 'VL', 'L', 'VL', 'L', 'M', 'L', 'L', 'M', 'VL', 'VL', 'L', 'VL', 'L', 'L', 'L',
-                'L', 'M']
+    out_rule = ['M', 'M', 'VH', 'M',  'H',  'VH', 'H',  'VH', 'VH', 'L', 'L', 'M', 'L',  'M',  'H',  'M',  'H', 'VH', 'L', 'L',
+                'M', 'L', 'L',  'H',  'L',  'M',  'H',  'L',  'M',  'H', 'M', 'H', 'H',  'M',  'H',  'VH', 'L', 'L',  'H', 'M',
+                'M', 'H', 'M',  'M',  'H',  'L',  'L',  'M',  'M',  'M', 'H', 'M', 'M',  'H',  'VL', 'VL', 'L', 'VL', 'L', 'M',
+                'L', 'M', 'H',  'VL', 'VL', 'L',  'VL', 'L',  'M',  'L', 'L', 'M', 'VL', 'VL', 'L', ' VL', 'L', 'L',  'L', 'L', 'M']
     out_rule = [item.lower() for item in out_rule]
     re_fuzzy = residual_energy(re, E_max)
     d_fuzzy = distance_to_mc(d, d_max)
